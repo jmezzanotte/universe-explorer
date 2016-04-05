@@ -1,6 +1,6 @@
 <?php 
 		
-	$dbc = mysql_connect('localhost', 'root', 'fairlady95');
+	$dbc = mysql_connect('localhost', 'root', '-------');
 	
 	if(!$dbc) {
 		die('Not Connected : ' . mysql_error()); // die will kill the script
