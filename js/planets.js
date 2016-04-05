@@ -45,7 +45,7 @@ function showMenu(id){
 		select.removeChild(select.firstChild); 
 	}
 	
-	var url = "http://localhost/midterm2/planets/resources/planetdata.php?menu=" + id;
+	var url = "http://universe-explorer.herokuapp.com/resources/planetdata.php?menu=" + id;
 	ajax.open('GET', url, true);
 	ajax.send(null);
 	
@@ -86,7 +86,7 @@ function displayPlanet(){
 
 	var choice = planets.value;
 	
-	var url = "http://localhost/midterm2/planets/resources/planetdata.php?planet=" + choice;
+	var url = "http://universe-explorer.herokuapp.com/resources/planetdata.php?planet=" + choice;
 	
 	ajax.open('GET', url, true); 
 	ajax.send(null); 
@@ -205,7 +205,7 @@ function displayGalaxy(){
 
 	var galaxy = U.$('galaxies').value;	
 	var ajax = getXMLHttpRequestObject();
-	var url = "http://localhost/midterm2/planets/resources/planetdata.php?galaxy=" + galaxy;
+	var url = "http://universe-explorer.herokuapp.com/resources/planetdata.php?galaxy=" + galaxy;
 	
 	ajax.open('GET', url, true); 
 	ajax.send(null); 
