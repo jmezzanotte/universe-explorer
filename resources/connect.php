@@ -1,6 +1,7 @@
 <?php 
-		
-	$dbc = mysql_connect('us-cdbr-iron-east-03.cleardb.net', 'babcdfac2ed8d3', 'fc9defaa');
+	// enhance security by parsing the url to get the database information instead 
+	// this way you don't have to reveal it here in the code
+	$dbc = mysql_connect('us-cdbr-iron-east-03.cleardb.net', 'user', 'pass');
 	
 	if(!$dbc) {
 		die('Not Connected : ' . mysql_error()); // die will kill the script
