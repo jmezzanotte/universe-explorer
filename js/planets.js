@@ -55,8 +55,7 @@ function showMenu(id){
 			if((ajax.status >= 200 && ajax.status < 300 ) ||
 					(ajax.status == 304)){
 				console.log(ajax.reponseText);
-				//var data = JSON.parse(ajax.responseText); 
-				var data = ajax.responseText;
+				var data = JSON.parse(ajax.responseText); 
 				if (data){
 					
 					select.style.visibility = 'visible';
