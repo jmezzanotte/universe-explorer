@@ -1,0 +1,215 @@
+/* 
+ * John Mezzanotte
+ * jmezzan1@my.smccd.edu
+ * CIS 114 OL
+ * visits.css
+ * Midterm 2
+ * Date: 11-12-2015
+ */
+
+/*
+dark blue: 212B40
+gray-blue: 547B97
+gray-green-blue: BADCDD
+light-green: C2E078
+light-gray: A8A8A8; 
+*/
+/*
+dark blue: 1B1D26
+dark green: 425955
+gray-green: 778C7A
+off-white: F1F2D8
+tan: BFBD9F
+blue green: 33FF99
+*/
+
+
+
+body{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+
+}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+/* ----------- My Form ----------- */
+
+form{
+	
+	margin:20px auto;
+	width:95%;
+	padding:14px;
+	background-color: black;
+	border-radius: 10px;
+	 
+}
+
+/* ----------- stylized ----------- */
+ h1 {
+	font-size:22px;
+	font-family:'Montserrat Subrayada', sans-serif;
+	font-weight:bold;
+	margin-bottom:8px;
+	color:#FFFFFF; 
+ }
+
+
+
+th{
+	color: #FFFFFF;	
+	font-family:'Montserrat Subrayada', sans-serif;
+}
+
+ p{
+	font-size:11px;
+	color:#FFFFFF;
+	margin-bottom:20px;
+	padding-bottom:10px;
+}
+
+ legend{
+	font-family:'Montserrat Subrayada', sans-serif;
+	font-size: 28px; 
+	color: white; 
+ }
+
+
+
+ select{
+	font-size:16px;
+	padding:10px 2px;
+	border:solid 1px #FF00FF;
+	width:300px;
+	height: 25px;
+	margin:2px 0 20px 10px;
+	font-family: 'Abel', sans-serif;
+	background-color: #9400D3;
+	color: #FFFFFF;
+	
+
+}
+
+#container{
+	margin: 30px auto;
+	width: 50%; 
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.1),
+			rgba(0, 0, 0, 0.1)
+		),
+		url(../images/space-background.png); 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+	z-index: -1;
+	padding: 20px;
+	border-radius: 10px;
+	-moz-box-shadow: 10px 10px 25px #707070;
+	-webkit-box-shadow: 10px 10px 25px #707070;
+	box-shadow: 10px 10px 25px #707070;
+	
+}
+
+td,th{
+	color: #FFFFFF;
+	text-align: center;
+	/*border-bottom: solid 1px #FFFFFF;*/
+}
+
+#details{
+	margin: 20px auto;
+	visibility: hidden;
+	
+}
+
+#type{
+	color: #FFFFFF;
+}
+
+#output {
+	clear:both;
+	margin-bottom: 10px;
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+#main-image{
+	margin: 0 auto; 
+	display: table;
+	visibility: hidden;
+	padding: 10px;  
+}
+
+#star-image{
+	visibility: hidden; 
+}
+
+#homeGalaxy-image{
+	visibility:hidden;
+	border-radius: 50%;
+}
+
+.detail-img{
+	padding: 10px; 
+	width: 100px;
+	border-radius: 50%;
+}
+
+#detail-1-more-info{
+	left : 300px; 
+	top : 670px;
+	visibility: hidden; 
+	color: #FFFFFF;
+	width: 400px;	
+	background-color: #9400D3;
+	border-radius: 10px;
+	border: solid 1px #000000;
+	padding: 10px;
+}
+
+#detail-2-more-info{
+	left : 300px; 
+	top : 400px;	
+	visibility: hidden;
+	color: #FFFFFF;
+	width: 400px;	
+	background-color: #9400D3;
+	border-radius: 10px;
+	border: solid 1px #000000;
+	padding: 10px;
+	
+}
+
+#detail-3-more-info{
+	left : 900px; 
+	top : 670px;
+	visibility: hidden;
+	color: #FFFFFF;
+	width: 400px;	
+	background-color: #9400D3;
+	border-radius: 10px;
+	border: solid 1px #000000;
+	padding: 10px;
+		
+}
+
+.inner{
+	background-color: #000000;
+	padding: 10px; 
+	border-radius: 10px; 
+	border : solid 1px #FFFFFF;
+}
+
+#more-info-1-header, #more-info-2-header, #more-info-3-header{
+	font-family:'Montserrat Subrayada', sans-serif;
+	color: #FFFFFF;
+}
+
+#more-info-1-content, #more-info-2-content, #more-info-3-content{
+	color: #FFFFFF;
+	
+	
+}

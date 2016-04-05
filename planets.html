@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- 
+		John Mezzanotte
+   		jmezzan1@my.smccd.edu
+  		CIS 114 OL
+  		planets.html
+  		midterm 2
+  		Date: 11-12-2015
+  	-->
+    <meta charset="utf-8">
+    <title>Explore our Planets and Galaxies</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- custom fonts -->
+   	<link href='https://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
+   	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/planets.css">
+    <link rel="stylesheet" href="css/drag.css">
+</head>
+<body>
+	<div id="container">
+	<form action="#" method="post" id="planet-form">
+		<fieldset>
+			<legend>Planets and Galaxies</legend>
+			<div id="menu">
+				<!--  Menu is generated dynamically from planets.js -->
+			</div>
+			<img id="main-image">
+			<div>
+				<h1 id="header"></h1>
+				<span id="output"></span>
+				<table id="details">
+					<tr>
+						<th id="detail-1-header"></th>
+						<th id="detail-2-header"></th>
+						<th id="detail-3-header"></th>
+					</tr>
+					<tr>
+						<td id="detail-1">
+							<img id="detail-1-img" class="detail-img">
+							<div class="drag" id="detail-1-more-info">
+								<div class="inner">
+									<h3 id="more-info-1-header"></h3>
+									<p id="more-info-1-content"></p>
+								</div>
+							</div>
+						</td>
+						<td id="detail-2">
+							<img id="detail-2-img" class="detail-img" >
+							<div class="drag" id="detail-2-more-info">
+								<div class="inner">
+									<h3 id="more-info-2-header"></h3>
+									<p id="more-info-2-content"></p>
+								</div>
+							</div>
+						</td>
+						<td id="detail-3">
+							<img id="detail-3-img" class="detail-img">
+							<div class="drag" id="detail-3-more-info">
+								<div class="inner">
+									<h3 id="more-info-3-header"></h3>
+									<p id="more-info-3-content"></p>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="detail-1-caption"></td>
+						<td id="detail-2-caption"></td>
+						<td id="detail-3-caption"></td>
+					</tr>
+				</table>
+			</div>
+			
+		</fieldset>
+	</form>
+	</div>
+	<script src="js/utilities.js"></script>
+	<script src="js/planets.js"></script>
+</body>
