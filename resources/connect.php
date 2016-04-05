@@ -8,7 +8,7 @@
 	
 	
 	mysql_set_charset('utf8', $dbc);
-	$db_selected = mysql_select_db('PlanetsApp', $dbc);
+	$db_selected = mysql_select_db('heroku_3c7fa83d067981b', $dbc);
 	
 	if(!$db_selected){
 		die('Can\'t use mysql : ' . mysql_error());
