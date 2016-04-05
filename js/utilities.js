@@ -125,9 +125,9 @@ var U = {
 			}, 
 			stopDrag : function(){
 				
-				//var body = document.getElementsByTagName('body')[0];
-				
 				U.removeEvent(document.documentElement, 'mousemove', U.draggable.startDrag);
+				// for mobile
+				U.removeEvent(document.documentElement, 'touchmove', U.draggable.startDrag);
 				U.draggable.element.style.zIndex = U.draggable.startZIndex; // return z-idex to original value
 				U.draggable.element = null;
 				
@@ -142,6 +142,9 @@ var U = {
 						
 					U.draggable.element = target;
 					U.addEvent(document.documentElement, 'mousemove', U.draggable.startDrag);
+					// seeing if I can add functionaliyt for mobile
+					U.addEvent(document.documentElement, 'touchmove', U.draggable.startDrag);
+					
 					
 					// crossbrowser way of getting coordinates
 					// we also need to account for the scroll bar positions 
@@ -170,6 +173,8 @@ var U = {
 					// without it things get crazy 
 					//target.style.position= 'fixed'; 
 					U.addEvent(U.draggable.element, 'mouseup', U.draggable.stopDrag);
+					// for mobile
+					U.addEvent(U.draggable.element, 'touchend', U.draggable.stopDrag);
 						
 				}
 			} // end enableDrag 
