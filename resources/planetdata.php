@@ -2,7 +2,7 @@
 	
 	// purpose of this script is to query the database and return the data to the javascript as json
 	// selected is the name of variable in the GET request 
-	
+	header("Access-Control-Allow-Origin: *");
 	// connect to the database
 	include('connect.php');
 	
