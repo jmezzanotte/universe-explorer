@@ -114,11 +114,11 @@
 			
 		$selected = $_GET['galaxy'];
 		
-		$query = ' 
+		$query = " 
 			SELECT *
 			FROM Galaxies
 			INNER JOIN GalaxyType ON galaxyType = galaxyTypeName 
-			WHERE galaxyName = " ' . $selected .'";';
+			WHERE galaxyName = '" . $selected ."';";
 			
 		if($result = mysql_query($query)){
 			$row = mysql_fetch_assoc($result);
