@@ -270,7 +270,7 @@ function displayGalaxy(){
 					
 					// set the info window
 					U.setText('more-info-2-header',data.galaxyType);
-					U.setText('more-info-2-content', data.galaxyDesc);
+					U.setText('more-info-2-content', data.galaxyTypeDesc);
 					
 				}
 			}
