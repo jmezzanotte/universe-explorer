@@ -57,7 +57,7 @@ effects = {
 				//var body = document.getElementsByTagName('body')[0];
 				
 				effects.removeEvent(document.documentElement, 'mousemove', effects.draggable.startDrag);
-				effects.removeEvent(document.documentElement, 'touchmove', effects.draggable.startDrag);
+				effects.removeEvent(document.documentElement, 'touchleave', effects.draggable.startDrag);
 
 				effects.draggable.element.style.zIndex = effects.draggable.startZIndex; // return z-idex to original value
 				effects.draggable.element = null;
@@ -77,7 +77,6 @@ effects = {
 					
 
 					effects.addEvent(document.documentElement, 'mousemove', effects.draggable.startDrag);
-					effects.addEvent(document.documentElement, 'touchmove', effects.draggable.startDrag);
 					
 					// crossbrowser way of getting coordinates
 					// we also need to account for the scroll bar positions 

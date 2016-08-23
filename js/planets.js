@@ -390,7 +390,7 @@ function enableInfoWindow(infoWindow, triggerElement, timer, posTop, posLeft){
 		displayInfoWindow(infoWindow);
 	});
 	
-	U.addEvent(triggerElement, 'mouseout', function(){
+	U.addEvent(triggerElement, 'mouseout touchleave', function(){
 		window.clearTimeout(timer);
 		timer = setTimeout(function(){
 			infoWindow.style.visibility = 'hidden';
@@ -398,7 +398,7 @@ function enableInfoWindow(infoWindow, triggerElement, timer, posTop, posLeft){
 	});
 	
 	
-	U.addEvent(infoWindow, 'mouseover', function(){
+	U.addEvent(infoWindow, 'mouseover touchstart', function(){
 		window.clearTimeout(timer);
 	});
 	
