@@ -108,7 +108,6 @@ effects = {
 					// without it things get crazy 
 					//target.style.position= 'fixed'; 
 					effects.addEvent(effects.draggable.element, 'mouseup', effects.draggable.stopDrag);
-					effects.addEvent(effects.draggable.element, 'touchleave', effects.draggable.stopDrag);
 				}
 			} // end enableDrag 
 	}, // end draggable object
