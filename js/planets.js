@@ -382,9 +382,9 @@ function enableInfoWindow(infoWindow, triggerElement, timer, posTop, posLeft){
 	'use strict';
 	
 	// enable drag and hover
-	U.addEvent(infoWindow, 'mousedown', U.draggable.enableDrag);
+	U.addEvent(infoWindow, 'mousedown', effects.draggable.enableDrag);
 	// for mobile
-	U.addEvent(infoWindow, 'touchstart', U.draggable.enableDrag);
+	U.addEvent(infoWindow, 'touchstart', effects.draggable.enableDrag);
 	
 	U.addEvent(triggerElement, 'mouseover', function(){
 		displayInfoWindow(infoWindow);
