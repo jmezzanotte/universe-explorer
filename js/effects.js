@@ -58,6 +58,8 @@ effects = {
 				
 				effects.removeEvent(document.documentElement, 'mousemove', effects.draggable.startDrag);
 				effects.removeEvent(document.documentElement, 'touchmove', effects.draggable.startDrag);
+				effects.removeEvent(document.documentElement, 'touchend', effects.draggable.startDrag);
+
 				effects.draggable.element.style.zIndex = effects.draggable.startZIndex; // return z-idex to original value
 				effects.draggable.element = null;
 				
