@@ -77,6 +77,7 @@ effects = {
 					
 
 					effects.addEvent(document.documentElement, 'mousemove', effects.draggable.startDrag);
+					effects.addEvent(document.documentElement, 'touchmove', effects.draggable.startDrag);
 					
 					// crossbrowser way of getting coordinates
 					// we also need to account for the scroll bar positions 
@@ -107,7 +108,7 @@ effects = {
 					// without it things get crazy 
 					//target.style.position= 'fixed'; 
 					effects.addEvent(effects.draggable.element, 'mouseup', effects.draggable.stopDrag);
-					effects.addEvent(effects.draggable.element, 'touchend', effects.draggable.stopDrag);
+					effects.addEvent(effects.draggable.element, 'touchleave', effects.draggable.stopDrag);
 				}
 			} // end enableDrag 
 	}, // end draggable object
