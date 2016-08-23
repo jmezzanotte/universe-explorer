@@ -57,7 +57,7 @@ effects = {
 				//var body = document.getElementsByTagName('body')[0];
 				
 				effects.removeEvent(document.documentElement, 'mousemove', effects.draggable.startDrag);
-				effects.removeEvent(document.documentElement, 'touchleave', effects.draggable.startDrag);
+				
 
 				effects.draggable.element.style.zIndex = effects.draggable.startZIndex; // return z-idex to original value
 				effects.draggable.element = null;
