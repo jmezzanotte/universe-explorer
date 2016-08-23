@@ -58,7 +58,6 @@ effects = {
 				
 				effects.removeEvent(document.documentElement, 'mousemove', effects.draggable.startDrag);
 				effects.removeEvent(document.documentElement, 'touchmove', effects.draggable.startDrag);
-				effects.removeEvent(document.documentElement, 'touchend', effects.draggable.startDrag);
 
 				effects.draggable.element.style.zIndex = effects.draggable.startZIndex; // return z-idex to original value
 				effects.draggable.element = null;
@@ -109,7 +108,7 @@ effects = {
 					// without it things get crazy 
 					//target.style.position= 'fixed'; 
 					effects.addEvent(effects.draggable.element, 'mouseup', effects.draggable.stopDrag);
-						
+					effects.addEvent(effects.draggable.element, 'touchend', effects.draggable.stopDrag);
 				}
 			} // end enableDrag 
 	}, // end draggable object
